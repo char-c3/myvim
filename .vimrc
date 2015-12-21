@@ -8,6 +8,7 @@ set clipboard=unnamed,autoselect
 set cmdheight=2
 
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,cp932,euc-jp,default,latin
+set backspace=indent,eol,start
 
 set t_Co=256
 "---------------------------
@@ -44,7 +45,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'derekwyatt/vim-scala'
 
 " vim-clojure-static (the most new version)
-" NeoBundle 'gnus/vim-clojure-static'
+NeoBundle 'gnus/vim-clojure-static'
 
 " rainbow-parentheses.vim
 NeoBundle 'kien/rainbow_parentheses.vim'
@@ -89,7 +90,7 @@ call neobundle#end()
 filetype plugin indent on
 
 " 未インストールのプラグインがあると, インストールするか尋ねてくる
-NeoBundleCheck
+" NeoBundleCheck
 
 "-------------------------
 " End Neobundle Settings.
@@ -104,3 +105,5 @@ au filetype clojure set tabstop=2 shiftwidth=2
 au filetype ruby set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.erb set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.yml set tabstop=2 shiftwidth=2
+
+syntax on
